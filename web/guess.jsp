@@ -5,7 +5,7 @@
   Time: 20:30
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java " %>
 <%@taglib prefix="guess" tagdir="/WEB-INF/tags" %>
 <html>
     <head>
@@ -13,6 +13,7 @@
     </head>
 <body>
     <%
+        //string初始化，将其默认值设为符号"*"
         String string = request.getParameter("guess");
         if (string == null||string.length()==0)
             string = "*";
